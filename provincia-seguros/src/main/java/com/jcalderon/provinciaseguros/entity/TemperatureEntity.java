@@ -1,5 +1,8 @@
 package com.jcalderon.provinciaseguros.entity;
 
+import org.hibernate.annotations.CreationTimestamp;
+
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -29,14 +32,21 @@ public class TemperatureEntity {
     @Column(name = "maximum_unit_type")
     private Integer maximumUnitType;
 
+    @CreationTimestamp
     @Column(name = "creation_date_time")
     @Temporal(TemporalType.TIMESTAMP)
     Date creationDateTime;
 
-    public TemperatureEntity() {
-    }
+    public TemperatureEntity() {}
 
-    public TemperatureEntity(Long id, Double minimumValue, String minimumUnit, Integer minimumUnitType, Double maximumValue, String maximumUnit, Integer maximumUnitType, Date creationDateTime) {
+    public TemperatureEntity(Long id,
+                             Double minimumValue,
+                             String minimumUnit,
+                             Integer minimumUnitType,
+                             Double maximumValue,
+                             String maximumUnit,
+                             Integer maximumUnitType,
+                             Date creationDateTime) {
         this.id = id;
         this.minimumValue = minimumValue;
         this.minimumUnit = minimumUnit;

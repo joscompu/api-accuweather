@@ -1,11 +1,9 @@
 package com.jcalderon.provinciaseguros.model;
 
-//Author: Jose Calderon
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
-
+//Author: Jose Calderon
 public class Forecast {
     @JsonProperty("Headline")
     private Headline headline;

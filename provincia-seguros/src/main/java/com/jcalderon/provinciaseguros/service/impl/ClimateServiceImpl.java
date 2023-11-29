@@ -22,7 +22,7 @@ public class ClimateServiceImpl implements ClimateService {
     }
 
     @Override
-    public Temperature getTemperature(String united) {
+    public Temperature getTemperature() {
         Forecast forecast;
         Temperature temperature;
         forecast = accuweatherService.dailyForecast();

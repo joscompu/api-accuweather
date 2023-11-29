@@ -4,6 +4,7 @@ package com.jcalderon.provinciaseguros.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+//Author: Jose Calderon
 public class Maximum {
     @JsonProperty("Value")
     private Double value;

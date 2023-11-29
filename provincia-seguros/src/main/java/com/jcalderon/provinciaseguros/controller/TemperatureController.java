@@ -5,10 +5,10 @@ import com.jcalderon.provinciaseguros.service.ClimateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+//Author: Jose Calderon
 @RestController
 @RequestMapping("/v1/temperature")
 public class TemperatureController {
-
     private final ClimateService climateService;
 
     public TemperatureController(@Autowired ClimateService climateService) {
@@ -16,7 +16,7 @@ public class TemperatureController {
     }
 
     @GetMapping(value = "/daily", produces = "application/json")
-    public Temperature getOneDayForecast(String united) {
-        return climateService.getTemperature(united);
+    public Temperature getOneDayForecast() {
+        return climateService.getTemperature();
     }
 }
