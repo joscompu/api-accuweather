@@ -16,7 +16,7 @@ public class TemperatureController {
     }
 
     @GetMapping(value = "/daily", produces = "application/json")
-    public Temperature getOneDayForecast() {
+    public Temperature getTemperature() {
         return climateService.getTemperature();
     }
 }

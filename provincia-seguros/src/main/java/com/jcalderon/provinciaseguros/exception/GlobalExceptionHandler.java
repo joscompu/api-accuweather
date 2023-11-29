@@ -1,4 +1,4 @@
-package com.jcalderon.provinciaseguros.error;
+package com.jcalderon.provinciaseguros.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

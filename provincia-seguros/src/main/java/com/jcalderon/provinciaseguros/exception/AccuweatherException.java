@@ -1,4 +1,4 @@
-package com.jcalderon.provinciaseguros.error;
+package com.jcalderon.provinciaseguros.exception;
 
 //Author: Jose Calderon
 public class AccuweatherException extends RuntimeException {

@@ -25,7 +25,7 @@ public class ClimateServiceImpl implements ClimateService {
     public Temperature getTemperature() {
         Forecast forecast;
         Temperature temperature;
-        forecast = accuweatherService.dailyForecast();
+        forecast = accuweatherService.dailyTemperature();
         temperature = forecast.getDailyForecast().get(0).getTemperature();
         temperatureService.saveTemperature(temperature);
         return temperature;

@@ -48,7 +48,7 @@ class ClimateServiceImplTest {
         temperature.setMaximum(maximum);
 
         // Configuración de comportamiento simulado
-        when(accuweatherService.dailyForecast()).thenReturn(forecast);
+        when(accuweatherService.dailyTemperature()).thenReturn(forecast);
         // Llamada al método que queremos probar
         Temperature result = climateService.getTemperature();
 
@@ -64,7 +64,7 @@ class ClimateServiceImplTest {
         assertEquals(temperature.getMaximum().getUnitType(), result.getMaximum().getUnitType());
 
         // Verifica que el método de AccuweatherService fue llamado una vez
-        verify(accuweatherService, times(1)).dailyForecast();
+        verify(accuweatherService, times(1)).dailyTemperature();
         // Verifica que el método de TemperatureService fue llamado una vez
         verify(temperatureService, times(1)).saveTemperature(temperature);
 
