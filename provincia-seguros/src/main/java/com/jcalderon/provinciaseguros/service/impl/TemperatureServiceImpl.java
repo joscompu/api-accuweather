@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class TemperatureServiceImpl implements TemperatureService {
     private final TemperatureRepository temperatureRepository;
+    public static final String COUNTRY = "Argentina";
     public TemperatureServiceImpl(@Autowired TemperatureRepository temperatureRepository) {
         this.temperatureRepository = temperatureRepository;
     }
@@ -27,6 +28,7 @@ public class TemperatureServiceImpl implements TemperatureService {
         try {
             if (temperature != null) {
                 TemperatureEntity temperatureEntity = temperature.toEntity();
+                temperatureEntity.setCountry(COUNTRY);
                 temperatureRepository.save(temperatureEntity);
             }
         } catch (Exception e) {

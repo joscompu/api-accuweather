@@ -14,6 +14,9 @@ public class TemperatureEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "country")
+    private String country;
+
     @Column(name = "minimum_value")
     private Double minimumValue;
 
@@ -37,17 +40,13 @@ public class TemperatureEntity {
     @Temporal(TemporalType.TIMESTAMP)
     Date creationDateTime;
 
-    public TemperatureEntity() {}
+    public TemperatureEntity() {
+    }
 
-    public TemperatureEntity(Long id,
-                             Double minimumValue,
-                             String minimumUnit,
-                             Integer minimumUnitType,
-                             Double maximumValue,
-                             String maximumUnit,
-                             Integer maximumUnitType,
-                             Date creationDateTime) {
+    public TemperatureEntity(Long id, String country, Double minimumValue, String minimumUnit, Integer minimumUnitType,
+                             Double maximumValue, String maximumUnit, Integer maximumUnitType, Date creationDateTime) {
         this.id = id;
+        this.country = country;
         this.minimumValue = minimumValue;
         this.minimumUnit = minimumUnit;
         this.minimumUnitType = minimumUnitType;
@@ -63,6 +62,14 @@ public class TemperatureEntity {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public Double getMinimumValue() {

@@ -21,6 +21,12 @@ public class ClimateServiceImpl implements ClimateService {
         this.temperatureService = temperatureService;
     }
 
+    /**
+     * Obtiene la temperatura diaria de una ciudad utilizando el servicio Accuweather.
+     * realiza una llamada al servicio Accuweather para obtener el pronóstico diario,
+     * extrae la temperatura del primer pronóstico y la guarda en la base de datos y retorna la temperatura.
+     *
+     */
     @Override
     public Temperature getTemperature() {
         Forecast forecast;

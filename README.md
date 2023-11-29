@@ -11,6 +11,7 @@ Asegúrate de tener los siguientes requisitos previos instalados antes de levant
 - Java 8 <br>
 ### Configuración de Variables de Entorno:
 
+#### Url de la api external
 - Variable: URL_API = http://dataservice.accuweather.com/forecasts/v1/daily/1day/7894?apikey=w6lz64yonMFRHkpykyTGGKQ5TAbHtpeW
 
 #### Base de Datos H2
@@ -20,5 +21,15 @@ Asegúrate de tener los siguientes requisitos previos instalados antes de levant
 - Variable: DATA_SOURCE_DRIVER =  org.h2.Driver
 
 - Variable: DATA_SOURCE_USERNAME = sa
-  
-Levantar el Proyecto
+
+
+  Nota: La base de datos no maneja password.
+
+# Swagger
+
+Puedes acceder a la interfaz Swagger y explorar las API mediante el siguiente enlace después de iniciar el proyecto:
+
+[Swagger UI](http://localhost:8080/swagger-ui.html)
+
+# Postman
+En la carpeta "Resources" se encuentra una carpeta llamada "postman" la cual contiene las colecciones y enviroment para probar los endpoint del proyecto.
