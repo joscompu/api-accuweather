@@ -1,0 +1,1 @@
+insert into temperature (minimum_value,minimum_unit,minimum_unit_type,maximum_value,maximum_unit,maximum_unit_type,creation_date_time) values (73.0,'F',18,82.0,'F',18,'2023-11-29')

@@ -1,9 +1,8 @@
 package com.jcalderon.provinciaseguros.model;
 
-//Author: Jose Calderon
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+//Author: Jose Calderon
 public class Temperature {
     @JsonProperty("Minimum")
     private Minimum minimum;

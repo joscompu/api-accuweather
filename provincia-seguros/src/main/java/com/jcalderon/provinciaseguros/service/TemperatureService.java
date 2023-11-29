@@ -1,8 +1,9 @@
 package com.jcalderon.provinciaseguros.service;
+//Author: Jose Calderon
 
 import com.jcalderon.provinciaseguros.model.Temperature;
 
-//Author: Jose Calderon
 public interface TemperatureService {
-    Temperature temperature(String united);
+
+    void saveTemperature(Temperature temperature);
 }

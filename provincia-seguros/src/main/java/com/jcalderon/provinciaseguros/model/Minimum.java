@@ -5,17 +5,17 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 //Author: Jose Calderon
 public class Minimum {
     @JsonProperty("Value")
-    private String value;
+    private Double value;
     @JsonProperty("Unit")
     private String unit;
     @JsonProperty("UnitType")
-    private String unitType;
+    private Integer unitType;
 
-    public String getValue() {
+    public Double getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(Double value) {
         this.value = value;
     }
 
@@ -27,11 +27,11 @@ public class Minimum {
         this.unit = unit;
     }
 
-    public String getUnitType() {
+    public Integer getUnitType() {
         return unitType;
     }
 
-    public void setUnitType(String unitType) {
+    public void setUnitType(Integer unitType) {
         this.unitType = unitType;
     }
 }
