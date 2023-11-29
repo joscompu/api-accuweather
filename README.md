@@ -1,1 +1,2 @@
-# api-accuweather
+Jose Calderon
+joscompu@gmail.com
