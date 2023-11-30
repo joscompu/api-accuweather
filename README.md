@@ -14,6 +14,8 @@ Asegúrate de tener los siguientes requisitos previos instalados antes de levant
 #### Url de la api external
 - Variable: URL_API = http://dataservice.accuweather.com/forecasts/v1/daily/1day/7894?apikey=w6lz64yonMFRHkpykyTGGKQ5TAbHtpeW
 
+    Nota: Se indica que el Apikey tiene un tiempo de expiracion, por lo que se debe crear cada cierto tiempo una nueva app en el panel de accuweather.
+
 #### Base de Datos H2
 
 - Variable: DATA_SOURCE_URL = jdbc:h2:mem:testdb
@@ -23,13 +25,14 @@ Asegúrate de tener los siguientes requisitos previos instalados antes de levant
 - Variable: DATA_SOURCE_USERNAME = sa
 
 
-  Nota: La base de datos no maneja password.
+  Nota: Para el caso de la base datos, por motivo de seguridad, no es recomendable exponer aqui las variables de base datos, pero como es una prueba tecnica,
+  queremos indicarlas.
 
 # Swagger
 
 Puedes acceder a la interfaz Swagger y explorar las API mediante el siguiente enlace después de iniciar el proyecto:
 
-[Swagger UI](http://localhost:8080/swagger-ui.html)
+[Swagger UI](http://localhost:8080/swagger-ui/#/)
 
 # Postman
-En la carpeta "Resources" se encuentra una carpeta llamada "postman" la cual contiene las colecciones y enviroment para probar los endpoint del proyecto.
+En "Resources" se encuentra una carpeta llamada "postman" la cual contiene las colecciones y enviroment para probar los endpoint del de la api.
