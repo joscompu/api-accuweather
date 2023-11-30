@@ -29,7 +29,7 @@ Asegúrate de tener los siguientes requisitos previos instalados antes de levant
 
 Puedes acceder a la interfaz Swagger y explorar las API mediante el siguiente enlace después de iniciar el proyecto:
 
-[Swagger UI](http://localhost:8080/swagger-ui.html)
+[Swagger UI](http://localhost:8080/swagger-ui/#/)
 
 # Postman
 En la carpeta "Resources" se encuentra una carpeta llamada "postman" la cual contiene las colecciones y enviroment para probar los endpoint del proyecto.
